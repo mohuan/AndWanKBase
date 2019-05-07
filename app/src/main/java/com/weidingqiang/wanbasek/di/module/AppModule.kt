@@ -4,6 +4,8 @@ import com.weidingqiang.wanbasek.model.http.HttpHelper
 import com.weidingqiang.wanbasek.model.http.RetrofitHelper
 import com.weidingqiang.wanbasek.app.AppContext
 import com.weidingqiang.wanbasek.model.DataManager
+import com.weidingqiang.wanbasek.model.prefs.ImplPreferencesHelper
+import com.weidingqiang.wanbasek.model.prefs.PreferencesHelper
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -23,8 +25,13 @@ class AppModule(val application: AppContext) {
     @Singleton
     internal fun provideHttpHelper(retrofitHelper: RetrofitHelper): HttpHelper = retrofitHelper
 
+    @Provides
+    @Singleton
+    internal fun providePreferencesHelper(implPreferencesHelper: ImplPreferencesHelper): PreferencesHelper {
+        return implPreferencesHelper
+    }
 
     @Provides
     @Singleton
-    internal fun provideDataManager(httpHelper: HttpHelper): DataManager = DataManager(httpHelper)
+    internal fun provideDataManager(httpHelper: HttpHelper,preferencesHelper: PreferencesHelper): DataManager = DataManager(httpHelper,preferencesHelper)
 }

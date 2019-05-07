@@ -175,7 +175,7 @@ dependencies {
     implementation rootProject.ext.dependencies["constraint"]
 
     //ui
-//    implementation rootProject.ext.dependencies["bgaBanner"]
+    implementation rootProject.ext.dependencies["bgaBanner"]
 //    implementation rootProject.ext.dependencies["qmui"]
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     testImplementation rootProject.ext.dependencies["junit"]
