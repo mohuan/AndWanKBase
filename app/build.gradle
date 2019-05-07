@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'kotlin-kapt'
+
 apply plugin: 'walle'
 
 apply plugin: 'com.jakewharton.butterknife'
@@ -183,7 +185,8 @@ dependencies {
     implementation rootProject.ext.dependencies["butterknife"]
     annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
     implementation rootProject.ext.dependencies["dagger"]
-    annotationProcessor rootProject.ext.dependencies["dagger-compiler"]
+    //kotlin结合dagger2 annotationProcessor 改成kapt
+    kapt rootProject.ext.dependencies["dagger-compiler"]
 
 //    implementation rootProject.ext.dependencies["aria-core"]
 //    annotationProcessor rootProject.ext.dependencies["aria-compiler"]
