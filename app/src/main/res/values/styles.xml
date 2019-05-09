@@ -13,4 +13,9 @@
         <item name="android:textSize">@dimen/textsize_sp_17</item>
     </style>
 
+    <style name="textSize_gray389_10">
+        <item name="android:textColor">@color/gray389</item>
+        <item name="android:textSize">@dimen/textsize_sp_10</item>
+    </style>
+
 </resources>

@@ -3,6 +3,7 @@ package com.weidingqiang.wanbasek.di.component
 import android.app.Activity
 import com.weidingqiang.wanbasek.di.module.FragmentModule
 import com.weidingqiang.wanbasek.di.scope.FragmentScope
+import com.weidingqiang.wanbasek.ui.main.fragment.HomeFragment
 import dagger.Component
 
 /**
@@ -15,7 +16,7 @@ interface FragmentComponent {
 
     fun getActivity(): Activity
 
-//    fun inject(arrangeMainFragment: ArrangeMainFragment)
+    fun inject(homeFragment: HomeFragment)
 
 
 }

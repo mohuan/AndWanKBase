@@ -10,6 +10,7 @@ import cn.bingoogolapple.bgabanner.BGABanner
 import cn.bingoogolapple.bgabanner.BGALocalImageSize
 import com.weidingqiang.wanbasek.R
 import com.weidingqiang.wanbasek.base.RootActivity
+import com.weidingqiang.wanbasek.ui.main.activity.MainActivity
 import com.weidingqiang.wanbasek.ui.splash.contract.SplashContract
 import com.weidingqiang.wanbasek.ui.splash.presenter.SplashPresenter
 import kotlinx.android.synthetic.main.activity_splash.*
@@ -163,11 +164,13 @@ class SplashActivity : RootActivity<SplashPresenter>(), SplashContract.View {
     }
 
     private fun initApp(animation: Animation?) {
-        if (mPresenter.isLogin) {
-//            startActivity(MainActivity.newInstance(getApplicationContext()))
-        } else {
-//            startActivity(LoginActivity.newInstance(getApplicationContext()))
-        }
+        startActivity(MainActivity.newInstance(this))
+
+//        if (mPresenter.isLogin) {
+//            startActivity(MainActivity.newInstance(this))
+//        } else {
+////            startActivity(LoginActivity.newInstance(getApplicationContext()))
+//        }
         finish()
     }
 

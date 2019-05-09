@@ -3,6 +3,7 @@ package com.weidingqiang.wanbasek.di.component
 import android.app.Activity
 import com.weidingqiang.wanbasek.di.module.ActivityModule
 import com.weidingqiang.wanbasek.di.scope.ActivityScope
+import com.weidingqiang.wanbasek.ui.main.activity.MainActivity
 import com.weidingqiang.wanbasek.ui.splash.activity.SplashActivity
 import dagger.Component
 
@@ -17,5 +18,7 @@ interface ActivityComponent {
     fun getActivity(): Activity
 
     fun inject(splashActivity: SplashActivity)
+
+    fun inject(mainActivity: MainActivity)
 
 }

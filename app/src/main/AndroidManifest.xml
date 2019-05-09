@@ -32,7 +32,7 @@
 
         <!--首页-->
         <activity
-                android:name=".MainActivity"
+                android:name=".ui.main.activity.MainActivity"
                 android:screenOrientation="portrait"/>
 
         <!-- 初始化service -->
