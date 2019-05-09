@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">WanBaseK</string>
+
+    <!--首页-->
+    <string name="home">首页</string>
+    <string name="history_socre">历史成绩</string>
+    <string name="mine">我的</string>
 </resources>

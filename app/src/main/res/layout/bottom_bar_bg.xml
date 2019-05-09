@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottombar_height"
+        android:background="#F3F3F3"
+        android:layout_alignParentBottom="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@android:color/transparent"
+        >
+        <com.weidingqiang.wanbasek.widget.bottombar.BottomBarItem
+            android:id="@+id/bottom_bar_home"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/bottombar_height"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            app:icon_Normal="@drawable/icon_bar_home_normal"
+            app:icon_Selected="@drawable/icon_bar_home_selected"
+            app:icon_Text="@string/home"
+            />
+
+
+        <com.weidingqiang.wanbasek.widget.bottombar.BottomBarItem
+            android:id="@+id/bottom_bar_history"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/bottombar_height"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            app:icon_Normal="@drawable/icon_bar_history_normal"
+            app:icon_Selected="@drawable/icon_bar_history_selected"
+            app:icon_Text="@string/history_socre"
+            />
+
+
+        <com.weidingqiang.wanbasek.widget.bottombar.BottomBarItem
+            android:id="@+id/bottom_bar_mine"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/bottombar_height"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            app:icon_Normal="@drawable/icon_bar_mine_normal"
+            app:icon_Selected="@drawable/icon_bar_mine_selected"
+            app:icon_Text="@string/mine"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
